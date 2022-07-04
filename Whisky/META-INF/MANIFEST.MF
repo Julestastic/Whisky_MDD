@@ -1,7 +1,16 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Whisky
-Bundle-SymbolicName: Whisky; singleton:=true
+Bundle-Name: %pluginName
+Bundle-SymbolicName: Whisky;singleton:=true
+Automatic-Module-Name: Whisky
 Bundle-Version: 0.1.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: whisky,
+ whisky.impl,
+ whisky.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy

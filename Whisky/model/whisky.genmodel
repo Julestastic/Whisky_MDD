@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Whisky/src-gen" creationIcons="false" editDirectory="/Whisky.edit/src-gen"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/Whisky/src-gen" creationIcons="false" editDirectory="/Whisky.edit/src-gen"
     editorDirectory="/Whisky.editor/src-gen" modelPluginID="Whisky" modelName="Whisky"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
   <foreignModel>whisky.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="Whisky" disposableProviderFactory="true" ecorePackage="whisky.ecore#/"/>
+  <genPackages prefix="Whisky" disposableProviderFactory="true" ecorePackage="whisky.ecore#/">
+    <genClasses ecoreClass="whisky.ecore#//Whisky">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference whisky.ecore#//Whisky/distillerie"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Whisky/lagerung"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Whisky/herstellung"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/bezeichnung"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/alkoholgehalt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/sorte"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/preis"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/füllmenge"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/geschmack"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/kategorie"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Whisky/alter"/>
+    </genClasses>
+    <genClasses ecoreClass="whisky.ecore#//Herkunft">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Herkunft/region"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Herkunft/land"/>
+    </genClasses>
+    <genClasses ecoreClass="whisky.ecore#//Distillerie">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Distillerie/hersteller"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Distillerie/umsatz"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Distillerie/herkunft"/>
+    </genClasses>
+    <genClasses ecoreClass="whisky.ecore#//Lagerung">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Lagerung/fass"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Lagerung/dauer"/>
+    </genClasses>
+    <genClasses ecoreClass="whisky.ecore#//Herstellung">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Herstellung/filtrierung"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Herstellung/farbstoffe"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Herstellung/singleMalt"/>
+    </genClasses>
+    <genClasses ecoreClass="whisky.ecore#//Blend">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Blend/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Blend/target"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute whisky.ecore#//Blend/mengeSource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Blend/typHerstellung"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference whisky.ecore#//Blend/typLagerung"/>
+    </genClasses>
+  </genPackages>
 </genmodel:GenModel>
