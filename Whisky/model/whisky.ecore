@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="whisky" nsURI="http://www.example.org/whisky" nsPrefix="whisky">
-  <eClassifiers xsi:type="ecore:EClass" name="Whisky"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Herkunft"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Distillerie"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Lagerung"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Herstellung"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Blend"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Whisky">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="distillerie" eType="#//Distillerie"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="lagerung" eType="#//Lagerung"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="herstellung" eType="#//Herstellung"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bezeichnung" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alkoholgehalt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sorte" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="preis" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="füllmenge" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="geschmack" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kategorie" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="alter" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Herkunft">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="region" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="land" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Distillerie">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hersteller" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="umsatz" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="herkunft" eType="#//Herkunft"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Lagerung">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fass" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dauer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Herstellung">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="filtrierung" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="farbstoffe" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="singleMalt" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Blend">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//Whisky"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//Whisky"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mengeSource" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typHerstellung" eType="#//Herstellung"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typLagerung" eType="#//Lagerung"/>
+  </eClassifiers>
 </ecore:EPackage>
