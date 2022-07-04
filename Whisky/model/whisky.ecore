@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="whisky" nsURI="http://www.example.org/whisky" nsPrefix="whisky">
+  <eClassifiers xsi:type="ecore:EClass" name="Whisky"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Herkunft"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Distillerie"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Lagerung"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Herstellung"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Blend"/>
+</ecore:EPackage>

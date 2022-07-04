@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_M_aTYPu2Eeyii5CTOsQ_iA" selectedViews="_NKTUwPu2Eeyii5CTOsQ_iA" version="15.0.0.202201261500">
+    <semanticResources>whisky.ecore</semanticResources>
+    <semanticResources>whisky.genmodel</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_NKTUwPu2Eeyii5CTOsQ_iA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_NMPOcPu2Eeyii5CTOsQ_iA" name="whisky" repPath="#_NLnjYPu2Eeyii5CTOsQ_iA" changeId="0d4314a4-e8c0-420b-b049-b11aa4ff4820">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+        <target xmi:type="ecore:EPackage" href="whisky.ecore#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_NLnjYPu2Eeyii5CTOsQ_iA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_NMqFMPu2Eeyii5CTOsQ_iA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_NMqFMfu2Eeyii5CTOsQ_iA" type="Sirius" element="_NLnjYPu2Eeyii5CTOsQ_iA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_iZP-wPu2Eeyii5CTOsQ_iA" type="2001" element="_iZE_oPu2Eeyii5CTOsQ_iA">
+          <children xmi:type="notation:Node" xmi:id="_iZRz8Pu2Eeyii5CTOsQ_iA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_iZRz8fu2Eeyii5CTOsQ_iA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_idj3APu2Eeyii5CTOsQ_iA" type="3005" element="_iZHb4Pu2Eeyii5CTOsQ_iA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_idj3Afu2Eeyii5CTOsQ_iA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_idj3Avu2Eeyii5CTOsQ_iA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_iZP-wfu2Eeyii5CTOsQ_iA" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iZP-wvu2Eeyii5CTOsQ_iA" width="500" height="90"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_NMqFMvu2Eeyii5CTOsQ_iA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_NNucMPu2Eeyii5CTOsQ_iA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_NNucMfu2Eeyii5CTOsQ_iA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_iZE_oPu2Eeyii5CTOsQ_iA" width="-1" height="-1">
+      <target xmi:type="ecore:EPackage" href="whisky.ecore#/"/>
+      <semanticElements xmi:type="ecore:EPackage" href="whisky.ecore#/"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_iZHb4Pu2Eeyii5CTOsQ_iA" showIcon="false" labelPosition="node" workspacePath="/org.eclipse.emf.ecoretools.design/icons/full/back/empty.svg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@nodeMappings[name='Empty%20Diagram']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@nodeMappings[name='Empty%20Diagram']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_NMFdcPu2Eeyii5CTOsQ_iA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
+    <target xmi:type="ecore:EPackage" href="whisky.ecore#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
